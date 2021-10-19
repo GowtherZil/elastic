@@ -1,0 +1,2 @@
+class SchemaDefinitionError(Exception):
+    pass
