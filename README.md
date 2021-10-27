@@ -1,25 +1,28 @@
 # 👉 Elastic 👈
 
-## 👼 El nacimiento
+## 👼 Giving birth to it
 
-Elastic nació desde un proyecto muy diferente. La idea general que aún persiste era hacer un [ODM](https://www.doctrine-project.org/projects/doctrine-mongodb-odm/en/2.2/cookbook/mapping-classes-to-orm-and-odm.html)(*Object Document Mapping*) orientado a [MongoDB](https://www.mongodb.com) asyncrónico, más fácil, instuitivo y pytónico que los ya existentes(*[MotorEngine](https://motorengine.readthedocs.io/en/latest/), [UMongo](https://umongo.readthedocs.io/en/latest/) y [AsyncMongo](https://github.com/bitly/asyncmongo)*). Hacer el [ODM](https://www.doctrine-project.org/projects/doctrine-mongodb-odm/en/2.2/cookbook/mapping-classes-to-orm-and-odm.html) llevaba obligatoriamente a la necesidad de tener algún mecanismo que validara esquemas de datos. Aquí entra **Elastic**, un mecanismo para validar datos. 
+Elastic was born from a very different proyect. The main idea that still persists was making an [ODM](https://www.doctrine-project.org/projects/doctrine-mongodb-odm/en/2.2/cookbook/mapping-classes-to-orm-and-odm.html)(*Object Document Mapping*) oriented to asyncrhonous [MongoDB](https://www.mongodb.com), easier and also more intuitive and pythonic than the already existing (*[MotorEngine](https://motorengine.readthedocs.io/en/latest/), [UMongo](https://umongo.readthedocs.io/en/latest/) and [AsyncMongo](https://github.com/bitly/asyncmongo)*). Making the [ODM](https://www.doctrine-project.org/projects/doctrine-mongodb-odm/en/2.2/cookbook/mapping-classes-to-orm-and-odm.html) took mandatory the need of having some sort of mechanism that could validate data schemas. Here is where **Elastic** entered, as a mechanism por validating data.
+
+If they asked me how do i wanted the result of programming **Elastic** to be , i'll answer:
+
+> Confortable as [pydantic](https://pydantic-docs.helpmanual.io/) and controlled as [marshamallow](https://marshmallow.readthedocs.io/en/stable/).
 
 Si me preguntaran como yo quería que fuera el resultado de programar con **Elastic** te diría:
 
-> Cómodo como [pydantic](https://pydantic-docs.helpmanual.io/) y controlado como [marshamallow](https://marshmallow.readthedocs.io/en/stable/).
+**Elastic** was implemented having these concepts as base. The new schemas or models define themselves as they'll do on [pydantic](https://pydantic-docs.helpmanual.io/), using the python notations for defining the fields but on the contrary of [pydantic](https://pydantic-docs.helpmanual.io/) the fields are not basic types but an only extensible type through inheritance, much like [marshamallow](https://marshmallow.readthedocs.io/en/stable/) and some other validators/serializators that use the same concept of *field as instance of a class*. This way we reach the mix of confortability and control that we wanted from the begining.
 
 
-**Elastic** se implementó teniendo estos conceptos como base. Los nuevos esquemas o modelos se definen al igual que [pydantic](https://pydantic-docs.helpmanual.io/), usando las anotaciones de python para definir los campos pero al contrario de [pydantic](https://pydantic-docs.helpmanual.io/) los campos no son tipos básicos sino un único tipo extensible a traves de herencia, parecido a [marshamallow](https://marshmallow.readthedocs.io/en/stable/) y otros validadores/serializadores que usan el concepto de *campo como instancia de una clase*. De esta manera alcanzamos la mezcla de comodida y control que queríamos desde un principio.
 
-## ☄ Uso básico
+## ☄ Basic Usage
 
-Para usar **Elastic** es necesario pasar por tres etapas:
+For using **Elastic** it's necesary to pass through this 3 stages:
 
-- Definir los campos de los modelos necesarios para solucionar el problema.
-- Contruir los campos necesarios.
-- Construir los modelos.
+- Defining the fields of the necessary models for problem's solution.
+- Building the necessary fields.
+- Building the models.
 
 ## TODOS
-- 🧪 Terminar las pruebas.
-- 📚 Terminar el tutorial de **Uso Basico**.
-- 🔥 Traducir al ingles.
+- 🧪 Finishing tests.
+- 📚 Finishing **Basic Usage** tutorial.
+- 🔥 English transaltion.
